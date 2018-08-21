@@ -44,7 +44,7 @@ const eventSchema = Schema({
 });
 
 const recordSchema = Schema({
-  user: { type: Schema.Types.ObjectId, ref: 'User', required: true }
+  user: { type: Schema.Types.ObjectId, ref: 'User', required: true },
   event: {
     name: { type: String, required: true },
     eventReference: { type: Schema.Types.ObjectId, ref: 'Event' }

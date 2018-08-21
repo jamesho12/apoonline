@@ -4,8 +4,8 @@ const morgan = require('morgan');
 const app = express();
 app.use(express.json());
 
-const authRouter = require('./auth/router');
-const userRouter = require('./user/router');
+const { router: authRouter } = require('./auth');
+const { router: usersRouter } = require('./users');
 
 app.use(morgan('common'));
 
